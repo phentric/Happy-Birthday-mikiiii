@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Sister 🤍</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      text-align: center;
+      background: url('YOUR_BACKGROUND_IMAGE.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    h1 {
+      font-size: 4em;
+      margin-top: 60px;
+      text-shadow: 2px 2px 8px #000;
+    }
+    button {
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: rgba(0,170,255,0.8);
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: rgba(0,200,255,1);
+    }
+    .tab {
+      display: none;
+      margin: 40px auto;
+      max-width: 800px;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 12px;
+      font-size: 1.4em;
+      line-height: 1.6em;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Sister 🤍</h1>
+
+  <!-- Buttons -->
+  <button onclick="showTab('meet')">How We Met</button>
+  <button onclick="showTab('value')">Your Value</button>
+  <button onclick="showTab('support')">Always There</button>
+
+  <!-- Tabs -->
+  <div id="meet" class="tab">
+    <h2>How We Met</h2>
+    <p>It’s honestly crazy how life works sometimes. I still remember when my friend randomly added me into that Instagram GC, and that’s where I met you. Back then we barely even talked, just small conversations here and there, nothing too special. But slowly, without even realizing it, you became one of the most important people in my life. Now you’re the person I share everything with my thoughts, my problems, my random moments, all of it. You turned from someone I met online into someone who genuinely feels like family to me. And no matter how far away you are, you’ve always been there in ways that mean more than I can explain. Happy Birthday Mikiiii, and thank you for being such a beautiful part of my life 🤍</p>
+  </div>
+
+  <div id="value" class="tab">
+    <h2>Your Value</h2>
+    <p>I don’t think you truly realize how much value you hold in my life. You’re one of those rare people who make everything feel lighter just by being there. Your kindness, your soft heart, the way you care so deeply about people — it’s something really special. I love you so much, not just because you’re my online sister, but because of the person you are. You’ve become my comfort place, someone I trust with the parts of me I don’t show everyone else. No matter how hard life gets or how much time passes, I’ll always appreciate you and the happiness you brought into my life. I’m genuinely grateful that out of all people in this world, I got to meet someone like you.</p>
+  </div>
+
+  <div id="support" class="tab">
+    <h2>Always There</h2>
+    <p>One thing I’ll never forget is how you stayed beside me when I was at my lowest. Even when you were struggling with your own problems and carrying your own pain, you still somehow found the strength to help me, listen to me, and make me feel less alone. That’s the kind of person you are — always putting others before yourself, always ready to comfort, motivate, and support people no matter what you’re going through. Your kindness is something so rare and genuine, and I honestly admire you for it every single day. You have this beautiful way of making people feel understood and cared for, and I hope you know that your presence changes lives more than you realize. You helped me through moments I thought I’d never get through, and I’ll always carry that gratitude in my heart 🤍</p>
+  </div>
+
+  <!-- Background Music -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/gAPMe5zeuEk?autoplay=1&loop=1&playlist=gAPMe5zeuEk" frameborder="0" allow="autoplay"></iframe>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
