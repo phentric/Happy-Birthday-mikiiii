@@ -12,7 +12,7 @@
       font-family: 'Dancing Script', cursive;
       color: white;
       text-align: center;
-      background: url('blue-star-and-moon-shaped-balloons-forming-night-sky-photo') no-repeat center center fixed;
+      background: url('background/balloons.png') no-repeat center center fixed;
       background-size: cover;
     }
     h1 {
@@ -23,16 +23,16 @@
     button {
       margin: 20px;
       padding: 15px 30px;
-      font-size: 1.2em;
+      font-size: 1.5em;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      background: rgba(0,170,255,0.8);
+      background: rgba(255,0,0,0.8); /* red */
       color: white;
       transition: 0.3s;
     }
     button:hover {
-      background: rgba(0,200,255,1);
+      background: rgba(255,50,50,1); /* brighter red */
     }
     .tab {
       display: none;
@@ -44,7 +44,7 @@
       font-size: 1.4em;
       line-height: 1.6em;
     }
-    iframe {
+    iframe, audio {
       margin-top: 20px;
       border-radius: 12px;
     }
@@ -53,14 +53,14 @@
 <body>
   <h1>Happy Birthday Sister 🤍</h1>
 
-  <!-- Buttons -->
-  <button onclick="showTab('meet')">How We Met</button>
-  <button onclick="showTab('value')">Your Value</button>
-  <button onclick="showTab('support')">Always There</button>
+  <!-- Red Tabs -->
+  <button onclick="showTab('meet')">🤍</button>
+  <button onclick="showTab('value')">🤍</button>
+  <button onclick="showTab('support')">🤍</button>
 
   <!-- Tabs -->
   <div id="meet" class="tab">
-    <h2>How We Met</h2>
+    <h2>How We Meet</h2>
     <p>It’s honestly crazy how life works sometimes. I still remember when my friend randomly added me into that Instagram GC, and that’s where I met you. Back then we barely even talked, just small conversations here and there, nothing too special. But slowly, without even realizing it, you became one of the most important people in my life. Now you’re the person I share everything with my thoughts, my problems, my random moments, all of it. You turned from someone I met online into someone who genuinely feels like family to me. And no matter how far away you are, you’ve always been there in ways that mean more than I can explain. Happy Birthday Mikiiii, and thank you for being such a beautiful part of my life 🤍</p>
   </div>
 
@@ -70,12 +70,15 @@
   </div>
 
   <div id="support" class="tab">
-    <h2>Always There</h2>
+    <h2>You Were Always There</h2>
     <p>One thing I’ll never forget is how you stayed beside me when I was at my lowest. Even when you were struggling with your own problems and carrying your own pain, you still somehow found the strength to help me, listen to me, and make me feel less alone. That’s the kind of person you are — always putting others before yourself, always ready to comfort, motivate, and support people no matter what you’re going through. Your kindness is something so rare and genuine, and I honestly admire you for it every single day. You have this beautiful way of making people feel understood and cared for, and I hope you know that your presence changes lives more than you realize. You helped me through moments I thought I’d never get through, and I’ll always carry that gratitude in my heart 🤍</p>
   </div>
 
-  <!-- Background Music -->
-  <iframe width="0" height="0" src="https://www.youtube.com/embed/gAPMe5zeuEk?autoplay=1&loop=1&playlist=gAPMe5zeuEk" frameborder="0" allow="autoplay"></iframe>
+  <!-- Background Music (local file example) -->
+  <audio autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <script>
     function showTab(id) {
